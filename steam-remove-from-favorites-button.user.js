@@ -16,13 +16,12 @@
     'use strict';
 
     // prevent script execution in <frame>s:
-    let w = (typeof unsafeWindow != undefined) ? unsafeWindow : window;
-    if (w.self != w.top) {
+    if (window.self != window.top) {
         return;
     }
 
     // check URL:
-    if (/https:\/\/store\.steampowered\.com\/app\/[\d]{2,}[\/]?[\S]*/i.test(w.location.href)) {
+    if (/https:\/\/store\.steampowered\.com\/app\/[\d]{2,}[\/]?[\S]*/i.test(window.location.href)) {
 
         // get user info from Steam:
         let _userinfo = $J('#application_config').data('userinfo');
@@ -46,7 +45,7 @@
             let _sID = g_sessionID ? g_sessionID : document.cookie.match(/(^|;)\s*sessionid\s*=\s*([^;]+)/i).pop();
 
             // get App ID:
-            let _appID = w.location.href.match(/\/app\/([\d]*)\//i).pop();
+            let _appID = window.location.href.match(/\/app\/([\d]*)\//i).pop();
 
             // create "Remove from Wishlist" button:
             let _xbtn = $J('<a href="javascript:;" class="btnv6_blue_hoverfade btn_medium" title="Remove from favorites." style="margin-left:2px;"><span>✘</span></a>').click(()=>{
