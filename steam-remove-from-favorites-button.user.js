@@ -15,11 +15,6 @@
 (function(){
     'use strict';
 
-    // =================================================
-    // STEAM ID (can be checked at https://steamdb.info)
-    let _SteamID = "put-your-SteamID-here";
-    // =================================================
-
     // prevent script execution in <frame>s:
     let w = (typeof unsafeWindow != undefined) ? unsafeWindow : window;
     if (w.self != w.top) {
@@ -30,10 +25,16 @@
     if (/https:\/\/store\.steampowered\.com\/app\/[\d]{2,}[\/]?[\S]*/i.test(w.location.href)) {
 
         // get Wishlist associated elements:
-        let _wl_container = $J('.queue_actions_ctn'); if(!_wl_container || !_wl_container.length){return;}
+        let _wl_container = $J('.queue_actions_ctn');
+        if(!_wl_container || !_wl_container.length){return;}
+
         let _wl_area   = _wl_container.find('#add_to_wishlist_area');
         let _wl_s_area = _wl_container.find('#add_to_wishlist_area_success');
         let _wl_f_area = _wl_container.find('#add_to_wishlist_area_fail');
+
+        // get user's Steam ID:
+        let _SteamID = $J('#application_config').data('userinfo').steamid;
+        if(!_SteamID || !/^\d{8,20}$/.test(_SteamID)){return;}
 
         // get Session ID from Steam's scripts or from Cookies:
         let _sID = g_sessionID ? g_sessionID : document.cookie.match(/(^|;)\\s*sessionid\\s*=\\s*([^;]+)/i).pop();
