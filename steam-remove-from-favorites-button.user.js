@@ -3,7 +3,7 @@
 // @description  Add "Remove from Wishlist" button to Steam store.
 // @author       Xeloses
 // @version      1.0
-// @ license     MIT
+// @license     MIT
 // @namespace    Xeloses.Steam.RemoveFromWishlist
 // @match        https://store.steampowered.com/app/*
 // @grant        GM_xmlhttpRequest
@@ -15,7 +15,7 @@
 
     // =================================================
     // STEAM ID (can be checked at https://steamdb.info)
-    let _SteamID = "76561198163759050";
+    let _SteamID = "your-Steam-ID-here";
     // =================================================
 
     // prevent script execution in <frame>s:
