@@ -44,20 +44,18 @@
 
         // create "Remove from Wishlist" button:
         let _xbtn = $J('<a href="javascript:;" class="btnv6_blue_hoverfade btn_medium" title="Remove from favorites." style="margin-left:2px;"><span>✘</span></a>').click(()=>{
-            if(_SteamID){
-                $J.ajax({
-                    type: 'POST',
-                    url: 'https://store.steampowered.com/wishlist/profiles/' + _SteamID + '/remove/',
-			        data: {appid: _appID, sessionid: _sID},
-                    success: ()=>{
-                        _wl_s_area.css('display','none');
-                        _wl_area.css('display','inline-block');
-                    },
-                    error: ()=>{
-                        alert('Error attempt to remove app from whishlist.');
-                    }
-		        });
-            }
+            $J.ajax({
+                type: 'POST',
+                url: 'https://store.steampowered.com/wishlist/profiles/' + _SteamID + '/remove/',
+			    data: {appid: _appID, sessionid: _sID},
+                success: ()=>{
+                    _wl_s_area.css('display','none');
+                    _wl_area.css('display','inline-block');
+                },
+                error: ()=>{
+                    alert('Error attempt to remove app from whishlist.');
+                }
+		    });
         });
 
         // check App/Game state:
