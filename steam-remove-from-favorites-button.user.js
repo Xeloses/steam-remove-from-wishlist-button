@@ -3,11 +3,13 @@
 // @description  Add "Remove from Wishlist" button to Steam store.
 // @author       Xeloses
 // @version      1.0
-// @license     MIT
+// @license      MIT
 // @namespace    Xeloses.Steam.RemoveFromWishlist
 // @match        https://store.steampowered.com/app/*
-// @grant        GM_xmlhttpRequest
-// @connect      store.steampowered.com
+// @updateURL    https://github.com/Xeloses/steam-remove-from-wishlist-button/raw/master/steam-remove-from-favorites-button.user.js
+// @downloadURL  https://github.com/Xeloses/steam-remove-from-wishlist-button/raw/master/steam-remove-from-favorites-button.user.js
+// @grant        none
+// @noframes
 // ==/UserScript==
 
 (function(){
@@ -15,7 +17,7 @@
 
     // =================================================
     // STEAM ID (can be checked at https://steamdb.info)
-    let _SteamID = "your-Steam-ID-here";
+    let _SteamID = "76561198163759050";
     // =================================================
 
     // prevent script execution in <frame>s:
