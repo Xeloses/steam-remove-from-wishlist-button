@@ -17,7 +17,7 @@
 
     // =================================================
     // STEAM ID (can be checked at https://steamdb.info)
-    let _SteamID = "76561198163759050";
+    let _SteamID = "put-your-SteamID-here";
     // =================================================
 
     // prevent script execution in <frame>s:
