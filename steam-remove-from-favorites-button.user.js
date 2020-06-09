@@ -23,6 +23,16 @@
     // check URL:
     if (/https:\/\/store\.steampowered\.com\/app\/[\d]{2,}[\/]?[\S]*/i.test(window.location.href)) {
 
+        // check Steam's JQuery object:
+        if(typeof $J != 'function'){
+            return;
+        }
+
+        // check game is in library (game can't be added to wishlist):
+        if($J('.game_area_already_owned').length){
+            return;
+        }
+
         // get user info from Steam:
         let _userinfo = $J('#application_config').data('userinfo');
 
