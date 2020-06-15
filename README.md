@@ -8,8 +8,6 @@ Add "Remove from Wishlist" button to Steam store (only to games/apps pages).
 ## Installation:
 **__Tampermonkey / Google Chrome__:**
 1) Right click Tampermonkey extension icon -> select "Options".
-2) Once on Tampermonkey settings page go to "Utility" tab.
-3) Copy this link:
-``https://github.com/Xeloses/steam-remove-from-wishlist-button/raw/master/steam-remove-from-favorites-button.user.js``
-and paste it into "Install from URL" field
+2) Once at Tampermonkey settings page go to "Utility" tab.
+3) Copy this link: ``https://github.com/Xeloses/steam-remove-from-wishlist-button/raw/master/steam-remove-from-favorites-button.user.js`` and paste it into "Install from URL" field
 4) Click "Install" button.
