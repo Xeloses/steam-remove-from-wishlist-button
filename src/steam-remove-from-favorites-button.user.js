@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Steam "Remove from Wishlist" button
+// @name         Steam: "Remove from Wishlist" button
 // @description  Add "Remove from Wishlist" button to Steam store.
 // @author       Xeloses
 // @version      1.0
