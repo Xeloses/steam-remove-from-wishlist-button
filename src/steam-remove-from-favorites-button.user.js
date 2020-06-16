@@ -30,6 +30,9 @@
         // check user has logged in:
         if(_userinfo && _userinfo.logged_in){
 
+            // check game is already in library:
+            if($J('.game_area_already_owned').length){return;}
+
             // get Wishlist associated elements:
             let _wl_container = $J('.queue_actions_ctn');
             if(!_wl_container || !_wl_container.length){return;}
