@@ -6,8 +6,8 @@
 // @license      MIT
 // @namespace    Xeloses.Steam.RemoveFromWishlist
 // @match        https://store.steampowered.com/app/*
-// @updateURL    https://github.com/Xeloses/steam-remove-from-wishlist-button/raw/master/steam-remove-from-wishlist-button.user.js
-// @downloadURL  https://github.com/Xeloses/steam-remove-from-wishlist-button/raw/master/steam-remove-from-wishlist-button.user.js
+// @updateURL    https://raw.githubusercontent.com/Xeloses/steam-remove-from-wishlist-button/master/steam-remove-from-wishlist-button.user.js
+// @downloadURL  https://raw.githubusercontent.com/Xeloses/steam-remove-from-wishlist-button/master/steam-remove-from-wishlist-button.user.js
 // @grant        none
 // @noframes
 // @run-at       document-end
