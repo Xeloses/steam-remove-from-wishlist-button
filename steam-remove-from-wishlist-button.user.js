@@ -3,7 +3,7 @@
 // @description  Add "Remove from Wishlist" button to Steam store.
 // @author       Xeloses
 // @version      1.0.1
-// @license      MIT
+// @license      GPL-3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
 // @namespace    Xeloses.Steam.RemoveFromWishlist
 // @match        https://store.steampowered.com/app/*
 // @updateURL    https://raw.githubusercontent.com/Xeloses/steam-remove-from-wishlist-button/master/steam-remove-from-wishlist-button.user.js
